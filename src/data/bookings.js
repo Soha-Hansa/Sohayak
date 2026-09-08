@@ -1,0 +1,182 @@
+export const currentCustomerProfile = {
+  id: 'cust-101',
+  name: 'Ananya Sen',
+  location: 'Howrah, West Bengal',
+  locality: 'Howrah Central',
+  memberSince: '2025',
+  requestsPosted: 24,
+  completedServices: 18,
+  activeRequestsCount: 4,
+  ongoingJobsCount: 2,
+  totalSpentINR: 24850,
+  thisMonthSpentINR: 5600,
+  pendingPaymentsINR: 1200,
+  avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80',
+  initials: 'AS',
+};
+
+export const activeBookings = [
+  {
+    id: 'bk-501',
+    serviceTitle: 'Cooperative Deep Home Cleaning',
+    providerName: 'Sunita Devi',
+    providerAvatar: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=250&q=80',
+    isCoopMember: true,
+    scheduledTime: 'Today at 2:30 PM',
+    status: 'In Progress',
+    amountINR: 1299,
+    address: 'Indiranagar 100ft Road, Bengaluru',
+    patronDividendEarnedINR: 65,
+  },
+  {
+    id: 'bk-502',
+    serviceTitle: 'Electrical Safety Audit & Circuit Repair',
+    providerName: 'Rajesh Kumar',
+    providerAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
+    isCoopMember: true,
+    scheduledTime: '12 Sept 2026, 11:00 AM',
+    status: 'Scheduled',
+    amountINR: 499,
+    address: 'Indiranagar 100ft Road, Bengaluru',
+    patronDividendEarnedINR: 25,
+  },
+];
+
+export const customerRequestsList = [
+  {
+    id: 'req-1',
+    title: 'Home Electrical Repair',
+    category: 'Electrical',
+    postedDate: 'Today, 10:15 AM',
+    location: 'Howrah',
+    budgetRange: '₹800 – ₹1,200',
+    applicantsCount: 5,
+    status: 'Finding Workers',
+    statusType: 'pending',
+  },
+  {
+    id: 'req-2',
+    title: 'Kitchen Plumbing Repair',
+    category: 'Plumbing',
+    postedDate: 'Yesterday, 4:30 PM',
+    location: 'Shibpur',
+    budgetRange: '₹600 – ₹1,000',
+    applicantsCount: 3,
+    status: 'Worker Selected',
+    statusType: 'scheduled',
+  },
+  {
+    id: 'req-3',
+    title: 'House Deep Cleaning',
+    category: 'Cleaning',
+    postedDate: '02 Sept 2026',
+    location: 'Kolkata',
+    budgetRange: '₹1,200',
+    applicantsCount: 7,
+    status: 'Completed',
+    statusType: 'completed',
+  },
+  {
+    id: 'req-4',
+    title: 'AC Servicing & Gas Top-up',
+    category: 'AC Repair',
+    postedDate: '05 Sept 2026',
+    location: 'Howrah',
+    budgetRange: '₹1,500',
+    applicantsCount: 4,
+    status: 'Finding Workers',
+    statusType: 'pending',
+  },
+];
+
+export const customerOngoingJobs = [
+  {
+    id: 'ong-1',
+    workerName: 'Rahul Das',
+    workerAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
+    workerSkill: 'Master Electrician',
+    isCoopMember: true,
+    serviceTitle: 'Home Electrical Repair',
+    location: 'Howrah',
+    paymentINR: 1000,
+    scheduledTime: 'Today, 4:30 PM',
+    status: 'In Progress',
+    currentStage: 2, // 1: Accepted, 2: In Progress, 3: Completed
+    stages: ['Accepted', 'In Progress', 'Completed'],
+  },
+  {
+    id: 'ong-2',
+    workerName: 'Suman Roy',
+    workerAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80',
+    workerSkill: 'Senior Plumber',
+    isCoopMember: true,
+    serviceTitle: 'Kitchen Plumbing Repair',
+    location: 'Shibpur',
+    paymentINR: 800,
+    scheduledTime: 'Tomorrow, 11:00 AM',
+    status: 'Accepted',
+    currentStage: 1,
+    stages: ['Accepted', 'In Progress', 'Completed'],
+  },
+];
+
+export const customerNotificationsList = [
+  {
+    id: 'notif-c1',
+    title: 'Rahul Das accepted your electrical repair request',
+    desc: 'Scheduled for Today, 4:30 PM at Howrah',
+    time: '5 min ago',
+    unread: true,
+  },
+  {
+    id: 'notif-c2',
+    title: 'You received 3 new worker applications',
+    desc: 'New applications for Kitchen Plumbing Repair',
+    time: '1 hour ago',
+    unread: true,
+  },
+  {
+    id: 'notif-c3',
+    title: 'Your payment of ₹1,200 is pending',
+    desc: 'Payment held safely in co-op escrow for House Deep Cleaning',
+    time: 'Yesterday',
+    unread: false,
+  },
+  {
+    id: 'notif-c4',
+    title: 'Please review your completed cleaning service',
+    desc: 'Rate Moumita Roy for your completed service appointment',
+    time: '3 days ago',
+    unread: false,
+  },
+];
+
+export const customerReviewsGiven = [
+  {
+    id: 'rev-c1',
+    workerName: 'Rahul Das',
+    workerAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
+    serviceTitle: 'Electrical Repair',
+    rating: 5.0,
+    date: '2 weeks ago',
+    comment: 'Rahul completed the repair quickly and explained everything clearly. Professional co-op member!',
+  },
+  {
+    id: 'rev-c2',
+    workerName: 'Moumita Roy',
+    workerAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80',
+    serviceTitle: 'Deep Home Cleaning',
+    rating: 5.0,
+    date: '1 month ago',
+    comment: 'Exceptional cleaning standards! Eco-friendly materials used throughout.',
+  },
+];
+
+export const monthlySpendingData = [
+  { month: 'Jan', amount: 3200 },
+  { month: 'Feb', amount: 4100 },
+  { month: 'Mar', amount: 2800 },
+  { month: 'Apr', amount: 4900 },
+  { month: 'May', amount: 4250 },
+  { month: 'Jun', amount: 5600 },
+];
